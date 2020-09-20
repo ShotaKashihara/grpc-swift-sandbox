@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package users;
+
+// protoc -I <path> で通すPATHからの相対パス
+import "users/address.proto";
+
+message User {
+  uint64 id = 1;
+  repeated Address addresses = 2;
+}
