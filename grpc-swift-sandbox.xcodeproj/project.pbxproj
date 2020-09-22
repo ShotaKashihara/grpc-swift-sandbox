@@ -8,11 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		EFBD00CB251753CA00F93224 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBD00CA251753CA00F93224 /* main.swift */; };
-		EFBD00D8251753FC00F93224 /* address.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBD00D4251753FC00F93224 /* address.pb.swift */; };
-		EFBD00D9251753FC00F93224 /* user_service.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBD00D5251753FC00F93224 /* user_service.pb.swift */; };
-		EFBD00DA251753FC00F93224 /* user.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBD00D6251753FC00F93224 /* user.pb.swift */; };
-		EFBD00DB251753FC00F93224 /* user_service.grpc.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBD00D7251753FC00F93224 /* user_service.grpc.swift */; };
 		EFBD00E62517570C00F93224 /* GRPC in Frameworks */ = {isa = PBXBuildFile; productRef = EFBD00E52517570C00F93224 /* GRPC */; };
+		EFBD00E9251877EC00F93224 /* calculator.grpc.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBD00E7251877EC00F93224 /* calculator.grpc.swift */; };
+		EFBD00EA251877EC00F93224 /* calculator.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBD00E8251877EC00F93224 /* calculator.pb.swift */; };
+		EFBD00EC2519D37800F93224 /* example.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBD00EB2519D37800F93224 /* example.pb.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -30,11 +29,10 @@
 /* Begin PBXFileReference section */
 		EFBD00C7251753CA00F93224 /* grpc-swift-sandbox */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "grpc-swift-sandbox"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFBD00CA251753CA00F93224 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		EFBD00D4251753FC00F93224 /* address.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = address.pb.swift; sourceTree = "<group>"; };
-		EFBD00D5251753FC00F93224 /* user_service.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = user_service.pb.swift; sourceTree = "<group>"; };
-		EFBD00D6251753FC00F93224 /* user.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = user.pb.swift; sourceTree = "<group>"; };
-		EFBD00D7251753FC00F93224 /* user_service.grpc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = user_service.grpc.swift; sourceTree = "<group>"; };
 		EFBD00DF2517549F00F93224 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		EFBD00E7251877EC00F93224 /* calculator.grpc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = calculator.grpc.swift; sourceTree = "<group>"; };
+		EFBD00E8251877EC00F93224 /* calculator.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = calculator.pb.swift; sourceTree = "<group>"; };
+		EFBD00EB2519D37800F93224 /* example.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = example.pb.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,20 +85,11 @@
 		EFBD00D2251753FC00F93224 /* swift */ = {
 			isa = PBXGroup;
 			children = (
-				EFBD00D3251753FC00F93224 /* users */,
+				EFBD00E7251877EC00F93224 /* calculator.grpc.swift */,
+				EFBD00E8251877EC00F93224 /* calculator.pb.swift */,
+				EFBD00EB2519D37800F93224 /* example.pb.swift */,
 			);
 			path = swift;
-			sourceTree = "<group>";
-		};
-		EFBD00D3251753FC00F93224 /* users */ = {
-			isa = PBXGroup;
-			children = (
-				EFBD00D4251753FC00F93224 /* address.pb.swift */,
-				EFBD00D5251753FC00F93224 /* user_service.pb.swift */,
-				EFBD00D6251753FC00F93224 /* user.pb.swift */,
-				EFBD00D7251753FC00F93224 /* user_service.grpc.swift */,
-			);
-			path = users;
 			sourceTree = "<group>";
 		};
 		EFBD00E02517564900F93224 /* Frameworks */ = {
@@ -174,11 +163,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EFBD00D9251753FC00F93224 /* user_service.pb.swift in Sources */,
+				EFBD00EA251877EC00F93224 /* calculator.pb.swift in Sources */,
+				EFBD00E9251877EC00F93224 /* calculator.grpc.swift in Sources */,
 				EFBD00CB251753CA00F93224 /* main.swift in Sources */,
-				EFBD00DB251753FC00F93224 /* user_service.grpc.swift in Sources */,
-				EFBD00D8251753FC00F93224 /* address.pb.swift in Sources */,
-				EFBD00DA251753FC00F93224 /* user.pb.swift in Sources */,
+				EFBD00EC2519D37800F93224 /* example.pb.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
